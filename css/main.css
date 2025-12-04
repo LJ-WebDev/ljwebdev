@@ -1,0 +1,225 @@
+@font-face {
+  font-family: Anta;
+  src: url(../fonts/Anta-Regular.ttf);
+}
+
+@font-face {
+  font-family: Alegreya;
+  src: url(../fonts/Alegreya.ttf);
+}
+
+:root {
+  --bg-0: #07080b;
+  --bg-1: #0b0f17;
+  --card: rgba(255, 255, 255, 0.03);
+  --text: #e6f0ff;
+  --muted: #9aa8bf;
+  --accent: #bfeb00;
+  --sub-accent: #7b864940;
+  --accent-2: #9c2edb;
+  --sub-accent-2: #7d489c40;
+  --danger: #ff6b6b;
+  --radius: 1rem;
+  --gap: 1.6rem;
+  --glass: rgba(255, 255, 255, 0.04);
+  --tech: #ffea00;
+}
+
+html {
+  font-size: 62.5%;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 1.2rem 0;
+  color: var(--text);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+h1 {
+  font-size: 3.2rem;
+  line-height: 1.05;
+}
+h2 {
+  font-size: 2.4rem;
+}
+h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 1.2rem 0;
+  color: var(--muted);
+  font-size: 1.6rem;
+}
+
+/* Anchors */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: 0.2s;
+}
+a:hover,
+a:focus {
+  color: var(--accent-2);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial;
+  font-size: 1.6rem; /* 16px */
+  line-height: 1.4;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--bg-0) 0%, var(--bg-1) 100%);
+  padding: 2.6rem 3vw;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+  padding: 1.2rem 2.5rem;
+  border-radius: var(--radius);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.01)
+  );
+  box-shadow: 0 5px 25px #3ee7d610;
+  border: 1px solid var(--glass);
+  margin-bottom: 100px;
+}
+
+.site-header .logo {
+  color: var(--accent);
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  padding: 0.5rem;
+}
+
+/* ...existing code... */
+
+/* Highlight current nav link (use aria-current="page") */
+/* nav a.active,
+nav a[aria-current='page'] {
+  color: #021226; 
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 10px 30px rgba(58, 110, 255, 0.12);
+  text-decoration: none;
+} */
+
+hr {
+  color: var(--muted);
+  box-shadow: 0 0 5px var(--accent);
+  width: 90%;
+  margin: auto;
+}
+
+main,
+section {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  /* box-shadow: 0 0 5px var(--muted);
+  border: 1px solid var(--glass); */
+}
+
+.main-h1 {
+  margin-right: 40%;
+}
+
+.main-p {
+  margin-left: 40%;
+  font-style: italic;
+
+  /* background-color: #6a8bff; */
+}
+
+.services-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-intro {
+  margin-right: 50%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.card {
+  margin: 2.5rem auto;
+  width: 30%;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(var(--card), var(--sub-accent));
+  box-shadow: 0 0 10px var(--sub-accent);
+}
+
+/* Buttons */
+.btn {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0.8rem 1.4rem;
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: 1.4rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: 0.3s;
+  margin-right: auto;
+  /* background: linear-gradient(var(--accent-2), var(--sub-accent-2)); */
+  background-color: var(--accent);
+}
+
+.btn:hover {
+  /* background: linear-gradient(var(--accent), var(--sub-accent)); */
+  background-color: var(--accent-2);
+}
+
+/* Footer */
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+  padding: 1.2rem 2.5rem;
+  border-radius: var(--radius);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.01)
+  );
+  box-shadow: 0 5px 25px #3ee7d610;
+  border: 1px solid var(--glass);
+}
+
+.site-footer .logo {
+  color: var(--accent);
+  font-size: 2.2rem;
+  font-weight: 600;
+}
