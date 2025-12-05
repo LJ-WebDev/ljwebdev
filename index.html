@@ -14,9 +14,10 @@
           <a href="/" aria-current="page">Home</a>
           <a href="#services">Services</a>
           <a href="#portfolio">Portfolio</a>
-          <a href="#">Pricing</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+          <a href="#faq">FAQ</a>
+          <a href="#about-me">About Me</a>
         </nav>
       </div>
     </header>
@@ -41,7 +42,7 @@
 
     <hr />
 
-    <section class="services-section" id="services-section">
+    <section class="services-section" id="services">
       <div class="section-intro">
         <h2>What I Can Do for You</h2>
         <p>
@@ -86,7 +87,7 @@
           </ul>
         </div>
       </div>
-      <button class="btn">Let's Build Your Site</button>
+      <!-- <button class="btn"><a href="#pricing">See Pricing</a></button> -->
     </section>
 
     <hr />
@@ -103,28 +104,332 @@
       </div>
       <div class="cards">
         <div class="card">
-          <img src="images/construction-site.png" alt="Construction Site" />
-          <h3>Accurate Construction</h3>
-          <p>
-            A simple one-page website built from scratch for a small
-            construction business. The goal was to create a clean online
-            presence with clear sections and easy navigation. Fully responsive,
-            so it looks great on phones, tablets, and desktops.
-          </p>
+          <img
+            class="project-screenshot project-desktop"
+            src="images/projects/ac-website-desktop.png"
+            alt="Construction Site"
+          />
+          <img
+            class="project-screenshot project-mobile"
+            src="images/projects/ac-website-mobile.png"
+            alt="Construction Site Mobile"
+          />
+          <div class="project-description">
+            <h3>Accurate Construction</h3>
+            <p>
+              A simple one-page website built from scratch for a small
+              construction business. The goal was to create a clean online
+              presence with clear sections and easy navigation. Fully
+              responsive, so it looks great on phones, tablets, and desktops.
+            </p>
+          </div>
+          <div class="project-footer">
+            <div>
+              <button class="btn">
+                <a target="_blank" href="https://accurateconstruction.com.au"
+                  >Visit Site</a
+                >
+              </button>
+            </div>
+            <div class="tech-used">
+              <h3>Tech used:</h3>
+              <span class="html">HTML</span> <span class="css">CSS</span>
+              <span class="js">JavaScript</span>
+            </div>
+          </div>
         </div>
         <div class="card">
-          <img src="images/music-producer-site.png" alt="Music Producer Site" />
-          <h3>BeatMaker Pro</h3>
+          <img
+            class="project-screenshot project-desktop"
+            src="images/projects/lj-music-desktop.png"
+            alt="Music Producer Site"
+          />
+          <img
+            class="project-screenshot project-mobile"
+            src="images/projects/lj-music-mobile.png"
+            alt="Music Producer Site Mobile"
+          />
+          <div class="project-description">
+            <h3>LJ Music</h3>
+            <p>
+              A single-page site built for a beginner music producer looking to
+              showcase their work and let visitors listen to their beats
+              directly on the site. Built with Vue.js and Tailwind CSS for a
+              smooth, modern layout and fast performance. Also fully responsive
+              across all devices.
+            </p>
+          </div>
+          <div class="project-footer">
+            <div>
+              <button class="btn">
+                <a
+                  target="_blank"
+                  href="https://lj-webdev.github.io/lj-music-spa/"
+                  >Visit Site</a
+                >
+              </button>
+            </div>
+            <div class="tech-used">
+              <h3>Tech used:</h3>
+              <span class="html">HTML</span> <span class="css">CSS</span>
+              <span class="js">JavaScript</span>
+              <span class="vue">Vue.js</span>
+              <span class="tailwind">Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <button class="btn">See More of My Work</button> -->
+    </section>
+
+    <hr />
+
+    <section class="pricing-section" id="pricing">
+      <div class="section-intro">
+        <h2>Pricing</h2>
+        <p>
+          <b>Fair, flexible, and friendly — no surprise invoices</b>
+        </p>
+        <p>
+          Every project is a little different, so I quote based on your content
+          needs, design complexity, and features. But to give you a real idea
+          (and avoid the mysterious “Contact for pricing 👀” energy you see
+          everywhere), here's what we're looking at:
+        </p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="price-description">
+            <h3>One-Page Website</h3>
+            <p>
+              From a clean hero to contact details — a modern, responsive
+              single-page site to give your business a professional online
+              presence.
+            </p>
+          </div>
+          <div class="price"><strong>~$200 AUD</strong></div>
+        </div>
+
+        <div class="card">
+          <h3>Multi-Page Website</h3>
           <p>
-            A sleek portfolio site for a beginner music producer to showcase
-            their beats and connect with clients.
+            More content? No problem. Multi-page sites priced based on content
+            and complexity (not just page count). Typically 3-7 pages.
+          </p>
+          <div class="price"><strong>~$250 AUD</strong></div>
+        </div>
+
+        <div class="card">
+          <h3>WordPress Setup</h3>
+          <p>
+            WordPress setup and basic configuration so you can edit content
+            yourself. Good for blogs and easily editable sites.
+          </p>
+          <div class="price"><strong>~$100 AUD</strong></div>
+        </div>
+
+        <div class="card">
+          <h3>Hosting & Domain Setup</h3>
+          <p>
+            Need domain registration or a host? I'll connect your domain and get
+            your site live. Pricing depends on your current setup.
+          </p>
+          <div class="price"><strong>Quote</strong></div>
+        </div>
+
+        <div class="card">
+          <h3>Maintenance & Support</h3>
+          <p>
+            Small fixes and updates are often free. For larger work, I provide a
+            clear quote before starting — no surprise subscriptions.
+          </p>
+          <div class="price"><strong>Quote</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="contact-section" id="contact">
+      <div class="section-intro">
+        <h2>Contact</h2>
+        <p><b>Let's Build Something Great Together</b></p>
+        <p>
+          Got a project in mind? Not sure what you need yet? Either way — I'm
+          happy to help. I reply quickly (usually the same day), and there's
+          zero pressure. If you just want advice or a rough idea of pricing,
+          that's perfectly fine too.
+        </p>
+      </div>
+      <div class="contact-options">
+        <div>
+          <p><b>Send a Message</b></p>
+          <p>
+            Fill out this quick form — it takes less time than choosing a
+            Netflix show:
+          </p>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/movglvjy"
+            method="POST"
+          >
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" required />
+
+            <label for="service">Service Interested In:</label><br />
+            <select name="service" id="service">
+              <option value="website-design">Website Design & Build</option>
+              <option value="hosting-setup">Hosting & Setup Help</option>
+              <option value="support-maintenance">Support & Maintenance</option>
+              <option value="other">Other / Just Asking</option>
+            </select>
+            <!-- <p class="form-hint">
+              *Hint: Not sure what service you need? Check out this
+              <a href="#">Q&A</a>.
+            </p> -->
+
+            <label for="message">Message:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tell me a bit about your project"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+        <div class="contact-email">
+          <p><b>Or Email Me Directly</b></p>
+          <p>
+            Prefer email? No problem. Shoot me a message at
+            <a href="mailto:ljwebdev@proton.me">ljwebdev@proton.me</a>.
+          </p>
+        </div>
+        <div>
+          <p>
+            Whether you're ready to start a project or just curious about what
+            things might cost, feel free to reach out. I'm here to help — no
+            awkward salesy vibes, I promise.
           </p>
         </div>
       </div>
-      <button class="btn">See More of My Work</button>
     </section>
 
-    <div
+    <hr />
+
+    <section class="faq-section" id="faq">
+      <div class="section-intro">
+        <h2>Frequently Asked Questions</h2>
+        <p>
+          Here are answers to some common questions I get about my services,
+          process, and pricing. If you don't see your question here, feel free
+          to reach out!
+        </p>
+      </div>
+      <div>
+        <details>
+          <summary>Do you help with hosting and domain setup?</summary>
+          <p>Absolutely. You have two options:</p>
+          <ul>
+            <li>
+              Option A: You own everything You buy the hosting + domain yourself
+              (recommended for long-term control), and I set it up for you.
+            </li>
+            <li>
+              Option B: I handle everything I set up the hosting and domain on
+              your behalf, manage the setup, and get everything connected. (You
+              still own the site — I just do the technical bits.)
+            </li>
+          </ul>
+          <p>
+            Either way works. Most small businesses choose Option A, but I'm
+            happy to help with both.
+          </p>
+        </details>
+        <details>
+          <summary>Do you work with existing websites?</summary>
+          <p>
+            If your site is built with HTML/CSS/JS or WordPress, I can update,
+            clean up, or refresh it. If it's built on another platform, I can
+            take a look — and if it's something I can work with, I'll let you
+            know. If not, I can suggest the best way forward.
+          </p>
+        </details>
+        <details>
+          <summary>Do you offer ongoing maintenance?</summary>
+          <p>
+            Yes. Basic fixes and small content updates are affordable (sometimes
+            free), and bigger updates or new features can be added at low cost.
+            I keep maintenance simple — no locked-in monthly contracts unless
+            you want one.
+          </p>
+        </details>
+        <details>
+          <summary>How much do hosting and domain subscriptions cost?</summary>
+          <p>
+            Hosting and domain fees are paid directly to your hosting provider
+            (I usually recommend VentraIP because they're reliable and based in
+            Australia). <br />
+            Here's what most small businesses can expect:
+          </p>
+          <ul>
+            <li>Domain (.com.au) — around $17-$20 per year</li>
+            <li>Web hosting (Starter plan) — around $9 per month</li>
+          </ul>
+          <p>
+            That works out to roughly $128 per year for everything. I'll help
+            you choose the right plan, set it up, and connect your site — and
+            you can either own and manage the hosting yourself or let me handle
+            the setup for you. No surprise costs.
+          </p>
+        </details>
+        <details>
+          <summary>What's the payment process?</summary>
+          <p>
+            Simple. You can pay by bank transfer or PayPal. Either 50% upfront
+            and 50% on completion — or pay in full at the end for very small
+            projects. And yes, I sadly do not accept coffee as payment… yet.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="about-me-section" id="about-me">
+      <h2>About Me</h2>
+      <h3>
+        Hi, I'm LJ — a freelance web developer creating clean, modern websites
+        for small businesses.
+      </h3>
+      <p>
+        I'm based in Australia and I build fast, responsive websites using HTML,
+        CSS, JavaScript, Vue.js, Tailwind CSS, and WordPress. I keep things
+        simple, modern, and easy to navigate — no bloated themes or confusing
+        tech talk.
+        <br /><br />
+        I'm still in the early stages of my web development career, but I've
+        already built real live sites for small businesses, including a
+        construction company and a beginner music producer. Every new project
+        helps me grow my portfolio, and because of that, my pricing stays
+        affordable without sacrificing quality.
+        <br /><br />
+        I love making websites that look clean, work smoothly, and help small
+        businesses look professional online. I'm easy to communicate with, I
+        reply quickly (sometimes too quickly), and I want every project to feel
+        like a friendly collaboration — not a corporate transaction.
+        <br /><br />
+        If you're a small business wanting a modern website without the premium
+        agency prices, I'd love to help bring your project to life.
+      </p>
+      <!-- <button class="btn"><a href="#contact">Make Contact</a></button> -->
+    </section>
+
+    <!-- <div
       style="
         font-size: 5rem;
         position: fixed;
@@ -142,7 +447,7 @@
       "
     >
       Website in progress ... 🚧
-    </div>
+    </div> -->
 
     <!-- <footer class="site-footer"></footer> -->
   </body>
