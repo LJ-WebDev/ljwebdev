@@ -296,6 +296,7 @@ section {
 .portfolio-section .card {
   min-width: 25rem;
   max-width: 40rem;
+  container-type: inline-size;
 }
 
 .pricing-section .card {
@@ -472,6 +473,19 @@ section {
   }
 
   .pricing-section .card {
+    width: 100%;
+  }
+}
+
+@container (max-width: 30rem) {
+  .project-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .tech-used {
+    padding-top: 2rem;
     width: 100%;
   }
 }
