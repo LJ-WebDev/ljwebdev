@@ -529,7 +529,8 @@ section {
   border-radius: var(--radius);
 }
 
-.tech-stack > div:nth-child(1):hover:after {
+.tech-stack > div:nth-child(1):hover:after,
+.tech-stack > div:nth-child(1):active:after {
   opacity: 1;
 }
 
@@ -539,7 +540,8 @@ section {
   border-radius: var(--radius);
 }
 
-.tech-stack > div:nth-child(2):hover:after {
+.tech-stack > div:nth-child(2):hover:after,
+.tech-stack > div:nth-child(2):active:after {
   opacity: 1;
 }
 
@@ -549,7 +551,8 @@ section {
   border-radius: var(--radius);
 }
 
-.tech-stack > div:nth-child(3):hover:after {
+.tech-stack > div:nth-child(3):hover:after,
+.tech-stack > div:nth-child(3):active:after {
   opacity: 1;
 }
 
@@ -559,7 +562,8 @@ section {
   border-radius: var(--radius);
 }
 
-.tech-stack > div:nth-child(4):hover:after {
+.tech-stack > div:nth-child(4):hover:after,
+.tech-stack > div:nth-child(4):active:after {
   opacity: 1;
 }
 
@@ -569,7 +573,8 @@ section {
   border-radius: var(--radius);
 }
 
-.tech-stack > div:nth-child(5):hover:after {
+.tech-stack > div:nth-child(5):hover:after,
+.tech-stack > div:nth-child(5):active:after {
   opacity: 1;
 }
 
@@ -579,7 +584,8 @@ section {
   border-radius: var(--radius);
 }
 
-.tech-stack > div:nth-child(6):hover:after {
+.tech-stack > div:nth-child(6):hover:after,
+.tech-stack > div:nth-child(6):active:after {
   opacity: 1;
 }
 
