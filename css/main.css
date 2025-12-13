@@ -495,8 +495,92 @@ section {
 
 .tech-stack {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  gap: 10rem;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.tech-stack > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* box-shadow: 0 0 10px var(--accent); */
+  border-radius: var(--radius);
+  padding: 1rem;
+  container-type: inline-size;
+}
+
+.tech-stack > div::after {
+  opacity: 0;
+  transition: 0.3s;
+  margin-top: -11rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--text);
+  padding: 1rem;
+  min-height: 10rem;
+  display: flex;
+  align-items: center;
+}
+
+.tech-stack > div:nth-child(1):after {
+  content: 'The coding language that puts the content on the page.';
+  background: linear-gradient(var(--bg-0), #f06529);
+  border-radius: var(--radius);
+}
+
+.tech-stack > div:nth-child(1):hover:after {
+  opacity: 1;
+}
+
+.tech-stack > div:nth-child(2):after {
+  content: 'The coding language that controls how the website looks.';
+  background: linear-gradient(var(--bg-0), #2965f1);
+  border-radius: var(--radius);
+}
+
+.tech-stack > div:nth-child(2):hover:after {
+  opacity: 1;
+}
+
+.tech-stack > div:nth-child(3):after {
+  content: 'The coding language that makes the website interactive.';
+  background: linear-gradient(var(--bg-0), #f0db4f);
+  border-radius: var(--radius);
+}
+
+.tech-stack > div:nth-child(3):hover:after {
+  opacity: 1;
+}
+
+.tech-stack > div:nth-child(4):after {
+  content: 'A modern JavaScript framework for building interactive websites.';
+  background: linear-gradient(var(--bg-0), #42b883);
+  border-radius: var(--radius);
+}
+
+.tech-stack > div:nth-child(4):hover:after {
+  opacity: 1;
+}
+
+.tech-stack > div:nth-child(5):after {
+  content: 'A styling framework that helps build clean designs faster.';
+  background: linear-gradient(var(--bg-0), #3490dc);
+  border-radius: var(--radius);
+}
+
+.tech-stack > div:nth-child(5):hover:after {
+  opacity: 1;
+}
+
+.tech-stack > div:nth-child(6):after {
+  content: 'A platform that makes it easy to update and manage your website.';
+  background: linear-gradient(var(--bg-0), #444140);
+  border-radius: var(--radius);
+}
+
+.tech-stack > div:nth-child(6):hover:after {
+  opacity: 1;
 }
 
 .tech-stack * {
@@ -504,6 +588,79 @@ section {
   text-align: center;
   color: var(--muted);
 }
+
+/* .tech-title {
+  background-color: var(--bg-1);
+  position: absolute;
+  width: 20rem;
+  height: fit-content;
+  padding: 1rem 1rem;
+  border-radius: var(--radius);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.tech-title:hover {
+  opacity: 1;
+} */
+
+/* .categories {
+  border-left: 3px solid var(--accent);
+  border-right: 3px solid var(--accent);
+  border-top: 3px solid var(--accent);
+  height: fit-content;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  text-align: center;
+} */
+
+/* .line {
+  background-color: var(--accent);
+  box-shadow: 0 0 5px var(--accent);
+  width: 0.1rem;
+  margin: auto;
+} */
+
+/* .grid-col-span-3 {
+  grid-column: span 3;
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+} */
+
+/* .tech-stack {
+  display: flex;
+  gap: 5rem;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tech-stack > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tech-stack > div > div {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.tech-stack > div > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tech-stack * {
+  height: 5rem;
+  text-align: center;
+  align-items: center;
+  color: var(--muted);
+} */
 
 @property --gradient-angle {
   syntax: '<angle>';
@@ -541,6 +698,18 @@ section {
   color: var(--accent);
   font-size: 2.2rem;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 1050px) {
+  .tech-stack {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .tech-stack {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -590,5 +759,11 @@ section {
   .tech-used {
     padding-top: 2rem;
     width: 100%;
+  }
+}
+
+@container (max-width: 15rem) {
+  .tech-stack > div::after {
+    font-size: 1.4rem;
   }
 }
