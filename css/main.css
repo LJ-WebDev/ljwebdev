@@ -529,20 +529,10 @@ section {
   border-radius: var(--radius);
 }
 
-.tech-stack > div:nth-child(1):hover:after,
-.tech-stack > div:nth-child(1):active:after {
-  opacity: 1;
-}
-
 .tech-stack > div:nth-child(2):after {
   content: 'The coding language that controls how the website looks.';
   background: linear-gradient(var(--bg-0), #2965f1);
   border-radius: var(--radius);
-}
-
-.tech-stack > div:nth-child(2):hover:after,
-.tech-stack > div:nth-child(2):active:after {
-  opacity: 1;
 }
 
 .tech-stack > div:nth-child(3):after {
@@ -551,20 +541,10 @@ section {
   border-radius: var(--radius);
 }
 
-.tech-stack > div:nth-child(3):hover:after,
-.tech-stack > div:nth-child(3):active:after {
-  opacity: 1;
-}
-
 .tech-stack > div:nth-child(4):after {
   content: 'A modern JavaScript framework for building interactive websites.';
   background: linear-gradient(var(--bg-0), #42b883);
   border-radius: var(--radius);
-}
-
-.tech-stack > div:nth-child(4):hover:after,
-.tech-stack > div:nth-child(4):active:after {
-  opacity: 1;
 }
 
 .tech-stack > div:nth-child(5):after {
@@ -573,20 +553,19 @@ section {
   border-radius: var(--radius);
 }
 
-.tech-stack > div:nth-child(5):hover:after,
-.tech-stack > div:nth-child(5):active:after {
-  opacity: 1;
-}
-
 .tech-stack > div:nth-child(6):after {
-  content: 'A platform that makes it easy to update and manage your website.';
+  content: 'A CMS platform that makes it easy to update and manage your website.';
   background: linear-gradient(var(--bg-0), #444140);
   border-radius: var(--radius);
 }
 
-.tech-stack > div:nth-child(6):hover:after,
-.tech-stack > div:nth-child(6):active:after {
-  opacity: 1;
+.tech-stack > div.active:nth-child(1)::after,
+.tech-stack > div.active:nth-child(2)::after,
+.tech-stack > div.active:nth-child(3)::after,
+.tech-stack > div.active:nth-child(4)::after,
+.tech-stack > div.active:nth-child(5)::after,
+.tech-stack > div.active:nth-child(6)::after {
+  opacity: 0.9;
 }
 
 .tech-stack * {
