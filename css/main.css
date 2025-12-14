@@ -577,7 +577,7 @@ section {
 }
 
 .tech-stack > div:nth-child(6):after {
-  content: 'A CMS platform that makes it easy to update and manage your website.';
+  content: 'A platform that makes it easy to update and manage your website.';
   background: linear-gradient(var(--bg-0), var(--wordpress));
   border-radius: var(--radius);
 }
