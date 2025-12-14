@@ -5,8 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
   if ('ontouchstart' in window) {
     // Mobile: use click to toggle active
     techTips.forEach((tip) => {
-      tip.addEventListener('click', () => {
+      tip.addEventListener('click', (e) => {
+        e.stopPropagation();
         tip.classList.toggle('active');
+      });
+
+      document.addEventListener('click', () => {
+        techTips.forEach((tip) => {
+          tip.classList.remove('active');
+        });
       });
     });
   } else {
