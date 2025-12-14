@@ -60,7 +60,13 @@
   --radius: 1rem;
   --gap: 2rem;
   --glass: rgba(255, 255, 255, 0.04);
-  --tech: #ffea00;
+  --html: #e34f26;
+  --html-gradient: #f46037;
+  --css: #663399;
+  --js: #f7df1e;
+  --vue: #4fc08d;
+  --tailwind: #06b6d4;
+  --wordpress: #21759b;
 }
 
 :root {
@@ -101,6 +107,18 @@ p {
   margin: 0 0 1.2rem 0;
   color: var(--muted);
   font-size: 1.6rem;
+}
+
+ul {
+  margin: 1rem 0 1rem 2rem;
+  padding: 1rem;
+  color: var(--muted);
+  font-size: 1.6rem;
+  list-style-type: disc;
+}
+
+li {
+  margin-bottom: 1rem;
 }
 
 /* Anchors */
@@ -371,27 +389,32 @@ section {
 }
 
 .tech-used .html {
-  background: linear-gradient(#f06529, #e34c26);
+  /* background: linear-gradient(var(--html-gradient), var(--html)); */
+  background-color: var(--html);
   /* box-shadow: 0 0 6px #f06529; */
 }
 
 .tech-used .css {
-  background: linear-gradient(#2965f1, #264de4);
+  /* background: linear-gradient(#2965f1, #264de4); */
+  background-color: var(--css);
   /* box-shadow: 0 0 6px #2965f1; */
 }
 
 .tech-used .js {
-  background: linear-gradient(#f0db4f, #f0db4fc0);
+  /* background: linear-gradient(#f0db4f, #f0db4fc0); */
+  background-color: var(--js);
   /* box-shadow: 0 0 6px #f0db4f; */
 }
 
 .tech-used .vue {
-  background: linear-gradient(#42b883, #35495e);
+  /* background: linear-gradient(#42b883, #35495e); */
+  background-color: var(--vue);
   /* box-shadow: 0 0 6px #42b883; */
 }
 
 .tech-used .tailwind {
-  background: linear-gradient(#3490dc, #6574cd);
+  /* background: linear-gradient(#3490dc, #6574cd); */
+  background-color: var(--tailwind);
   /* box-shadow: 0 0 6px #3490dc; */
 }
 
@@ -525,37 +548,37 @@ section {
 
 .tech-stack > div:nth-child(1):after {
   content: 'The coding language that puts the content on the page.';
-  background: linear-gradient(var(--bg-0), #f06529);
+  background: linear-gradient(var(--bg-0), var(--html));
   border-radius: var(--radius);
 }
 
 .tech-stack > div:nth-child(2):after {
   content: 'The coding language that controls how the website looks.';
-  background: linear-gradient(var(--bg-0), #2965f1);
+  background: linear-gradient(var(--bg-0), var(--css));
   border-radius: var(--radius);
 }
 
 .tech-stack > div:nth-child(3):after {
   content: 'The coding language that makes the website interactive.';
-  background: linear-gradient(var(--bg-0), #f0db4f);
+  background: linear-gradient(var(--bg-0), var(--js));
   border-radius: var(--radius);
 }
 
 .tech-stack > div:nth-child(4):after {
   content: 'A modern JavaScript framework for building interactive websites.';
-  background: linear-gradient(var(--bg-0), #42b883);
+  background: linear-gradient(var(--bg-0), var(--vue));
   border-radius: var(--radius);
 }
 
 .tech-stack > div:nth-child(5):after {
   content: 'A styling framework that helps build clean designs faster.';
-  background: linear-gradient(var(--bg-0), #3490dc);
+  background: linear-gradient(var(--bg-0), var(--tailwind));
   border-radius: var(--radius);
 }
 
 .tech-stack > div:nth-child(6):after {
   content: 'A CMS platform that makes it easy to update and manage your website.';
-  background: linear-gradient(var(--bg-0), #444140);
+  background: linear-gradient(var(--bg-0), var(--wordpress));
   border-radius: var(--radius);
 }
 
