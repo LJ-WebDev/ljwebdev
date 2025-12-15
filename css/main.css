@@ -146,7 +146,7 @@ details {
   margin: 1rem auto;
 }
 
-details p {
+details p:nth-child(2) {
   border-top: 1px solid var(--accent);
   margin-top: 1rem;
   padding-top: 1rem;
@@ -234,6 +234,12 @@ body {
   top: 2.6rem;
   backdrop-filter: blur(5px);
   z-index: 10;
+  transition-duration: 0.3s;
+}
+
+.site-header.expanded {
+  top: 0;
+  margin: auto -3vw auto -3vw;
 }
 
 .site-header .logo {
