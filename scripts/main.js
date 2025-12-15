@@ -1,7 +1,7 @@
 // Making header expand when scrolled down by 10 px or more
 window.addEventListener('scroll', () => {
   const header = document.querySelector('.site-header');
-  if (window.scrollY > 10) {
+  if (window.scrollY > 100) {
     header.classList.add('expanded');
   } else {
     header.classList.remove('expanded');
