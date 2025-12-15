@@ -554,6 +554,7 @@ section {
   min-height: 10rem;
   display: flex;
   align-items: center;
+  transform: rotateY(90deg);
 }
 
 .tech-stack > div:nth-child(1):after {
@@ -598,6 +599,8 @@ section {
 .tech-stack > div.active:nth-child(4)::after,
 .tech-stack > div.active:nth-child(5)::after,
 .tech-stack > div.active:nth-child(6)::after {
+  transform: rotateY(0deg);
+  transition-duration: 0.3s;
   opacity: 0.9;
 }
 
