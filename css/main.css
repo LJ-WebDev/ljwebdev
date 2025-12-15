@@ -240,6 +240,7 @@ body {
 .site-header.expanded {
   top: 0;
   margin: auto -3vw auto -3vw;
+  border-radius: 0;
 }
 
 .site-header .logo {
