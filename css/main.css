@@ -323,7 +323,7 @@ section {
   border-radius: 1rem;
   background: linear-gradient(var(--card), var(--sub-accent));
   border: 2px solid var(--glass);
-  box-shadow: 0 0 10px var(--accent);
+  box-shadow: 0 0 20px var(--sub-accent);
 }
 
 .services-section .card {
@@ -553,9 +553,12 @@ section {
   color: var(--text);
   padding: 1rem;
   min-height: 10rem;
+  max-width: 20rem;
   display: flex;
   align-items: center;
   transform: rotateY(90deg);
+  display: flex;
+  align-self: center;
 }
 
 .tech-stack > div:nth-child(1):after {
@@ -722,7 +725,7 @@ section {
   font-weight: 600;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1390px) {
   .tech-stack {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -784,7 +787,7 @@ section {
   }
 }
 
-@container (max-width: 15rem) {
+@container (max-width: 16.5rem) {
   .tech-stack > div::after {
     font-size: 1.4rem;
   }
