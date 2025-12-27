@@ -1,0 +1,50 @@
+/* ---------- SWAP ---------- */
+
+.swap {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.swap input {
+  display: none;
+}
+
+.swap svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+/* Default (unchecked) */
+.swap-off {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.swap-on {
+  opacity: 0;
+  transform: rotate(-180deg);
+}
+
+/* Checked state */
+.swap input:checked ~ .swap-off {
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+.swap input:checked ~ .swap-on {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+/* ---------- ROTATE VARIANT ---------- */
+
+.swap-rotate svg {
+  transform-origin: center;
+}
